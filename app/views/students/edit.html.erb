@@ -1,0 +1,6 @@
+<h1>Student Edit Form</h1>
+<%= form_tag(students_path) do %>
+  <%= text_field_tag("student_first_name", nil, placeholder: "First Name") %>
+  <%= text_field_tag("student_last_name", nil, placeholder: "Last Name") %>
+  <%= submit_tag "Update Student" %>
+<% end %>
